@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Dog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .header-info h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .header-info p {
+            font-size: 14px;
+            color: #b3b3b3;
+            margin: 5px 0;
+        }
+        .cta-button {
+            background-color: #1db954;
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .playlist {
+            margin-top: 40px;
+        }
+        .playlist h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .track-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .track-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #282828;
+        }
+        .track-number {
+            font-size: 14px;
+            color: #b3b3b3;
+            width: 30px;
+        }
+        .track-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .track-info {
+            flex-grow: 1;
+        }
+        .track-title {
+            font-size: 16px;
+            margin: 0;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .track-title:hover {
+            text-decoration: underline;
+        }
+        .track-artist {
+            font-size: 14px;
+            color: #b3b3b3;
+            margin: 0;
+        }
+        .track-duration {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.ibb.co/qngKJ0p/Dog-2.png" alt="Spotify Dog" class="profile-pic">
+            <div class="header-info">
+                <h1>Spotify Dog</h1>
+                <p>Playlist • Spotify</p>
+                <p>Created by: Spotify • 4 songs, 13 min 36 sec</p>
+                <button class="cta-button">PLAY</button>
+            </div>
+        </header>
+        <section class="playlist">
+            <h2>Popular</h2>
+            <ul class="track-list">
+                <li class="track-item">
+                    <span class="track-number">1</span>
+                    <img src="https://cdn.cms-twdigitalassets.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.2560.png" alt="X" class="track-image">
+                    <div class="track-info">
+                        <a href="https://x.com/spotifydogonsol" class="track-title" target="_blank">X</a>  
+                        <p class="track-artist">Elon Musk</p>
+                    </div>
+                    <span class="track-duration">3:17</span>
+                </li>
+                <li class="track-item">
+                    <span class="track-number">2</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/182px-Telegram_2019_Logo.svg.png" alt="Telegram" class="track-image">
+                    <div class="track-info">
+                        <a href="https://t.me/SpotifyDogOnSol" class="track-title" target="_blank">Telegram</a>
+                        <p class="track-artist">Pavel Durov</p>
+                    </div>
+                    <span class="track-duration">2:16</span>
+                </li>
+                <li class="track-item">
+                    <span class="track-number">3</span>
+                    <img src="https://docs.dexscreener.com/~gitbook/image?url=https%3A%2F%2F198140802-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F7OmRM9NOmlC1POtFwsnX%252Ficon%252F6BJXvNUMQSXAtDTzDyBK%252Ficon-512x512.png%3Falt%3Dmedia%26token%3Da7ce263e-0b40-4afb-ae25-eae378aef0ab&width=32&dpr=1&quality=100&sign=2d759e0&sv=1" alt="Dexscreener" class="track-image">
+                    <div class="track-info">
+                        <a href="https://open.spotify.com/track/5GtMEZEeFFsuHY8ad4kOxv" class="track-title" target="_blank">Dexscreener</a>
+                        <p class="track-artist">Andreas Diegues and Alexandre Bini</p>
+                    </div>
+                    <span class="track-duration">4:13</span>
+                </li>
+                <li class="track-item">
+                    <span class="track-number">4</span>
+                    <img src="https://pump.fun/_next/image?url=%2Flogo.png&w=32&q=75" alt="Pump.fun" class="track-image">
+                    <div class="track-info">
+                        <a href="https://open.spotify.com/track/1OxcIUqVmVYxT6427tbhDW" class="track-title" target="_blank">Pump.fun</a>
+                        <p class="track-artist">Solana</p>
+                    </div>
+                    <span class="track-duration">4:55</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
